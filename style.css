@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+  --offcanvas-width:270px;
+  
+}
+
+.sided-nav{
+  width: var(--offcanvas-width);
+  background-color: #D6F2FF;
+}
 body{
     min-height: 100vh;
-    background-color: #fff;
+    background-color: #fdfdfd;
 }
 .navbar{
     width: 250px;
@@ -28,11 +37,7 @@ body{
     font-size:1.25rem;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover{
-    background-color: rgb(182, 182, 169);
-}
+
 
 .my-container{
  transition: 0.4s;
@@ -112,3 +117,25 @@ body{
         width: 350px;
     }
 }
+
+@media (min-width:992px) {
+  body{
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop::before{
+    display: none;
+  }
+  .sided-nav{
+    transform:none;
+    visibility: visible !important;
+   
+  }
+
+  .close{
+    display: none;
+  }
+  main{
+    margin-left: var(--offcanvas-width);
+  }
+}
+

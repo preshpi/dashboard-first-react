@@ -12,42 +12,65 @@
 </head>
 
 
- <body class="bg-light">
-    <nav class="navbar navbar-expand d-flex flex-column align-items-start" id="sidebar">
-       <a href="#" class="navbar-brand ">
+ <body >
+    
+  
+      <div class="container-fluid">
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> 
+    <nav class="navbar-light  py-1" >
+       <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <span class="navbar-toggler-icon"  data-bs-target="#offcanvasExample"></span>
+    </button>
+    </nav>
+   
+   <div class="offcanvas offcanvas-start sided-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <a href="#" class="navbar-brand ">
           <div class="logo ms-5">
             <img src="./image/logo.png" alt="logo">
           </div>
        </a>
-       <ul class="navbar-nav d-flex flex-column mt-5 w-100">
-           <li class="nav-items w-100" >
-               <a href="" class="nav-link text-dark pl-4 ">
-                <span>
-                    <img src="./image/dashboard icon.png" alt="" class="py-1">
-                </span>
-                  <span>Dashboard</span>
-               </a>
-           </li>
+        <button type="button" class="btn-close text-reset close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+          <li class="nav-items w-100" >
+              <a href="" class="nav-link text-dark pl-4 ">
+               <span>
+                   <img src="./image/dashboard icon.png" alt="" class="py-1">
+               </span>
+                 <span>Dashboard</span>
+              </a>
+          </li>
 
-           <li class="nav-items w-100" >
-            <a href="" class="nav-link text-dark pl-4">
-                <span>
-                    <img src="./image/cases icon.png" alt="">
-                </span>
-                  <span>cases</span>
-            </a>
-        </li>
-       </ul>
-    </nav>
-
-    
-      <section class="p-4 my-container container">
+          <li class="nav-items w-100" >
+           <a href="" class="nav-link text-dark pl-4">
+               <span>
+                   <img src="./image/cases icon.png" alt="">
+               </span>
+                 <span>cases</span>
+           </a>
+       </li>
+      </ul>
        
-       <div class="bars">
-         
-        <i class="fas fa-bars " id="menu-btn"></i>
-        
-       </div>
+      </div>
+    </div> 
+       
+     <main>
+        <section class="p-4 my-container container"> 
+
         
         <div class="main d-flex" id="wrapper">
 
@@ -280,7 +303,9 @@
         </div>
        
   
-    </section>
+    </section>  
+     </main>
+     
 
     
 
