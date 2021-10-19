@@ -17,6 +17,8 @@ body{
     min-height: 100vh;
     background-color: #fdfdfd;
 }
+
+
 .navbar{
     width: 250px;
     height: 100vh;
@@ -115,6 +117,10 @@ body{
 @media screen and (max-width:480px){
     .main{
         width: 350px;
+    }
+
+    .card{
+      width: 250px;
     }
 }
 
