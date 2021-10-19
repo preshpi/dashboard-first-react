@@ -119,9 +119,7 @@ body{
         width: 350px;
     }
 
-    .card{
-      width: 300px;
-    }
+   
 }
 
 @media (min-width:992px) {
